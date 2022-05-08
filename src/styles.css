@@ -1,0 +1,99 @@
+html,
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.app {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.node {
+  width: 20px;
+  padding: 5px;
+  text-align: center;
+  margin: 2px;
+  border-radius: 3px;
+  background-color: #0971f1;
+  color: #fff;
+}
+
+.cell {
+  width: 20px;
+  padding: 6px 5px;
+  text-align: center;
+  border: 1px solid #999;
+  border-radius: 2px;
+  margin: 1.5px;
+}
+
+.weightSum {
+  background-color: #00e639;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 3px 0;
+  font-size: 0.9rem;
+}
+
+.weightSum:hover {
+  cursor: pointer;
+}
+
+.resetButton {
+  margin-top: 10px;
+  padding: 5px 8px;
+  background-color: purple;
+  color: white;
+  border: 1px solid purple;
+  border-radius: 3px;
+}
+
+.resetButton:hover {
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 960px) {
+  #root {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .app {
+    flex-direction: column;
+  }
+}
